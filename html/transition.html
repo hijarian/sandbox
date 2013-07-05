@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Transition test</title>
+		<style>
+			div {
+				width: 200px;
+				height: 50px;
+				margin: 0 auto;
+				border: 1px solid black;
+				border-radius: 0;
+				background: #f99;
+				-webkit-transition: all .5s linear;
+				-moz-transition: all .5s linear;
+				-o-transition: all .5s linear;
+				-ms-transition: all .5s linear;
+				transition: all .5s linear;
+			}
+
+			div:hover {
+				border: 2px dashed red;
+				border-radius: 15px;
+				background-image: linear-gradient(bottom, rgb(61,166,194) 11%, rgb(92,200,233) 56%);
+				background-image: -o-linear-gradient(bottom, rgb(61,166,194) 11%, rgb(92,200,233) 56%);
+				background-image: -moz-linear-gradient(bottom, rgb(61,166,194) 11%, rgb(92,200,233) 56%);
+				background-image: -webkit-linear-gradient(bottom, rgb(61,166,194) 11%, rgb(92,200,233) 56%);
+				background-image: -ms-linear-gradient(bottom, rgb(61,166,194) 11%, rgb(92,200,233) 56%);
+
+				background-image: -webkit-gradient(
+					linear,
+					left bottom,
+					left top,
+					color-stop(0.11, rgb(61,166,194)),
+					color-stop(0.56, rgb(92,200,233))
+				);
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

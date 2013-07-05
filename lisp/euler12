@@ -1,0 +1,2 @@
+#!/bin/bash
+clisp euler12.cl $1

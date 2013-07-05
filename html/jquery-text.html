@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf8">
+		<title>jQuery text selection test</title>
+	</head>
+	<body>
+		<input type="checkbox" name="ch1">
+    This text must change !!!
+<input type="checkbox" name="ch2">
+	<script src="/usr/share/javascript/jquery/jquery.js"></script>
+	<script>
+$(function(){
+	$('input[name="ch1"]').css('border', '0 auto');
+	$('input[name="ch1"]').next().wrap('<div />');
+});
+</script>
+</body>
+</html>
